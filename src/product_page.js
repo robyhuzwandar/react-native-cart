@@ -26,8 +26,8 @@ const ProductPage = () => {
   };
 
   const clearCart = () => {
-    setProducts([]);
-    setTotalPrice(0);
+    // setProducts([]);
+    // setTotalPrice(0);
   };
   return (
     <View>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {StatusBar, View, ScrollView, StyleSheet} from 'react-native';
-
 import ProductPage from './src/product_page';
 
 const App = () => {
