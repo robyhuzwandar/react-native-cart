@@ -15,9 +15,10 @@ const ProductPage = () => {
 
     if (productsTmp.indexOf(product) !== -1) {
       productsTmp[index].qty += 1;
-      productsTmp[index].price += product.price;
+      productsTmp[index].totalPrice += product.price;
     } else {
       product.qty = 1;
+      product.totalPrice = product.price;
       productsTmp.push(product);
     }
 
@@ -26,8 +27,8 @@ const ProductPage = () => {
   };
 
   const clearCart = () => {
-    // setProducts([]);
-    // setTotalPrice(0);
+    setProducts([]);
+    setTotalPrice(0);
   };
   return (
     <View>

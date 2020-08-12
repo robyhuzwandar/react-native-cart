@@ -12,7 +12,7 @@ export const Table = ({products, totalPrice}) => {
           <Item
             title={item.title}
             qty={item.qty}
-            price={`Rp ${formatIDR(item.price)}`}
+            price={`Rp ${formatIDR(item.totalPrice)}`}
           />
         )}
         keyExtractor={(item) => item.title}
