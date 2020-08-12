@@ -6,6 +6,11 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "android:release": "cd android && ./gradlew app:assembleRelease",
+    "android:bundle": "cd android && ./gradlew app:bundleRelease",
+    "android:clean": "cd android && ./gradlew clean && ./gradlew cleanBuildCache",
+    "reinstall": "rm -rf node_modules && yarn install",
+    "clean": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-*",
     "test": "jest",
     "lint": "eslint ."
   },
