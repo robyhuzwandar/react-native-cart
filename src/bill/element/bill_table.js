@@ -26,7 +26,7 @@ const Item = ({title, qty, price}) => {
   return (
     <View style={S.itemContainer}>
       <Text style={{flex: 1}}>{title}</Text>
-      <Text style={{flex: 1}}>{qty}</Text>
+      <Text style={{flex: 1}}>x{qty}</Text>
       <Text>{price}</Text>
     </View>
   );
