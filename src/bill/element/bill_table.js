@@ -23,10 +23,11 @@ export const Table = ({products, totalPrice}) => {
 };
 
 const Item = ({title, qty, price}) => {
+  qty = qty && qty > 1 ? 'x' + qty : null;
   return (
     <View style={S.itemContainer}>
       <Text style={{flex: 1}}>{title}</Text>
-      <Text style={{flex: 1}}>x{qty}</Text>
+      <Text style={{flex: 1}}>{qty}</Text>
       <Text>{price}</Text>
     </View>
   );
